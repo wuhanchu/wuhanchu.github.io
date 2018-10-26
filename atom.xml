@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-09T11:05:31.657Z</updated>
+  <updated>2018-10-26T07:36:35.629Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/06/09/react_naitve%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
-    <id>http://yoursite.com/2018/06/09/react_naitve遇到的坑/</id>
-    <published>2018-06-09T11:05:31.657Z</published>
-    <updated>2018-06-09T11:05:31.657Z</updated>
+    <title>javascript 的高阶用法</title>
+    <link href="http://yoursite.com/2018/10/26/javascript%20%E9%AB%98%E9%98%B6%E7%94%A8%E6%B3%95/"/>
+    <id>http://yoursite.com/2018/10/26/javascript 高阶用法/</id>
+    <published>2018-10-26T06:22:08.000Z</published>
+    <updated>2018-10-26T07:36:35.629Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="javascript-的高阶用法"><a href="#javascript-的高阶用法" class="headerlink" title="javascript 的高阶用法"></a>javascript 的高阶用法</h1><h4 id="获取数组中的值"><a href="#获取数组中的值" class="headerlink" title="获取数组中的值"></a>获取数组中的值</h4><figure class="highlight plain"><figcaption><span>foo = ["one", "two", "three", "four"];</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">var [one, two, three] = foo;</div><div class="line">console.log(one); // &quot;one&quot;</div><div class="line">console.log(two); // &quot;two&quot;</div><div class="line">console.log(three); // &quot;three&quot;</div><div class="line"></div><div class="line">//如果你要忽略某些值，你可以按照下面的写法获取你想要的值</div><div class="line">var [first, , , last] = foo;</div><div class="line">console.log(first); // &quot;one&quot;</div><div class="line">console.log(last); // &quot;four&quot;</div><div class="line"></div><div class="line">//你也可以这样写</div><div class="line">var a, b; //先声明变量</div><div class="line"></div><div class="line">[a, b] = [1, 2];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 2</div></pre></td></tr></table></figure><p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a, b;</div><div class="line"></div><div class="line">[a=5, b=7] = [1];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 7</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;javascript-的高阶用法&quot;&gt;&lt;a href=&quot;#javascript-的高阶用法&quot; class=&quot;headerlink&quot; title=&quot;javascript 的高阶用法&quot;&gt;&lt;/a&gt;javascript 的高阶用法&lt;/h1&gt;&lt;h4 id=&quot;获取数组中的值&quot;&gt;
+      
+    
+    </summary>
+    
+      <category term="开发语言" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>遇到的坑</title>
+    <link href="http://yoursite.com/2018/10/26/react_naitve%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
+    <id>http://yoursite.com/2018/10/26/react_naitve遇到的坑/</id>
+    <published>2018-10-26T06:22:08.000Z</published>
+    <updated>2018-10-26T07:35:52.089Z</updated>
     
     <content type="html"><![CDATA[<h1 id="react-naive-遇到的坑"><a href="#react-naive-遇到的坑" class="headerlink" title="react naive 遇到的坑"></a>react naive 遇到的坑</h1><h3 id="android-方面的一些问题"><a href="#android-方面的一些问题" class="headerlink" title="android 方面的一些问题"></a>android 方面的一些问题</h3><p><strong>webview 加载本地文件，调试的时候正常，编译后不正常。</strong><br>需要把对应的文件 copy 到 android/assets。</p><p><strong>PermissionsAndroid的 request 和 check 方法总是返回 True.</strong><br>修改 app/build.gradle 的 targetSdkVersion 在23之上。</p><h4 id="使用框架的一些问题"><a href="#使用框架的一些问题" class="headerlink" title="使用框架的一些问题"></a>使用框架的一些问题</h4><p><a href="https://github.com/dvajs/dva/issues/1222" target="_blank" rel="external">dva2 onError 处理的异常仍然抛出</a></p><p><a href="https://github.com/crazycodeboy/react-native-splash-screen/issues/219" target="_blank" rel="external">react-native-splash-screen编译出错</a><br>切换到v3.0.6能够解决问题</p>]]></content>
     
@@ -34,6 +59,10 @@
     
     </summary>
     
+      <category term="框架的坑" scheme="http://yoursite.com/categories/%E6%A1%86%E6%9E%B6%E7%9A%84%E5%9D%91/"/>
+    
+    
+      <category term="react-native" scheme="http://yoursite.com/tags/react-native/"/>
     
   </entry>
   
