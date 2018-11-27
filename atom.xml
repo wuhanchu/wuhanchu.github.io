@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-27T13:14:48.513Z</updated>
+  <updated>2018-11-27T13:32:02.109Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,36 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>玩不动taro</title>
-    <link href="http://yoursite.com/2018/11/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8-taro/"/>
-    <id>http://yoursite.com/2018/11/26/玩不动-taro/</id>
+    <title>python玩不动啊</title>
+    <link href="http://yoursite.com/2018/11/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8/%E7%8E%A9%E4%B8%8D%E5%8A%A8_python/"/>
+    <id>http://yoursite.com/2018/11/26/玩不动/玩不动_python/</id>
     <published>2018-11-26T06:22:08.000Z</published>
-    <updated>2018-11-27T13:14:48.513Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>页面的样式文件建议放在与页面JS的同级目录下，然后通过ES6规范 import 进行引入，支持使用 CSS 预编译处理器，目前提供了 sass 预编译插件 @tarojs/plugin-sass，需要自行在本地进行安装。</p><p>页面JS要求必须有一个 render 函数，函数返回 JSX 代码，具体 JSX 代码的写法请参考 JSX章节。</p><p>由于页面JS也继承自 Component 组件基类，所以页面同样拥有生命周期，页面的生命周期方法如下：</p><p>生命周期方法    作用    说明<br>componentWillMount    页面被载入    在微信小程序中这一生命周期方法对应 onLoad<br>componentDidMount    页面渲染完成    在微信小程序中这一生命周期方法对应 onReady<br>shouldComponentUpdate    页面是否需要更新<br>componentWillUpdate    页面即将更新<br>componentDidUpdate    页面更新完毕<br>componentWillUnmount    页面退出    在微信小程序中这一生命周期方法对应 onUnload<br>componentDidShow    页面展示出来    在微信小程序中这一生命周期方法对应 onShow，在H5中同样实现<br>componentDidHide    页面被隐藏    在微信小程序中这一生命周期方法对应 onHide，在H5中同样实现</p><p>微信小程序中 onLoad 通常带有一个参数 options，在 Taro 中你可以在所有生命周期方法中通过 this.$router.params 访问到，在其他端也适用</p><h2 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h2><h4 id="app-less引入其他的test-less文件，修改后发现没有实时变化"><a href="#app-less引入其他的test-less文件，修改后发现没有实时变化" class="headerlink" title="app.less引入其他的test.less文件，修改后发现没有实时变化"></a>app.less引入其他的test.less文件，修改后发现没有实时变化</h4><p><strong>问题描述：</strong><br>编译的时候会将test.less的数据编译复制到 app.less 中。<br>但是修改test.less会生成一个 test.wxss。这个文件没有被任何文件import进入，所以无法实时渲染。</p><p>解决办法：需要在app.js单独import进去，或者直接内容写入到app.less当中。</p><h4 id="设置了componentCatchError-无法生效，无法设置全局错误处理"><a href="#设置了componentCatchError-无法生效，无法设置全局错误处理" class="headerlink" title="设置了componentCatchError 无法生效，无法设置全局错误处理"></a>设置了componentCatchError 无法生效，无法设置全局错误处理</h4>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;生命周期&quot;&gt;&lt;a href=&quot;#生命周期&quot; class=&quot;headerlink&quot; title=&quot;生命周期&quot;&gt;&lt;/a&gt;生命周期&lt;/h2&gt;&lt;p&gt;页面的样式文件建议放在与页面JS的同级目录下，然后通过ES6规范 import 进行引入，支持使用 CSS 预编译处理器，目
-      
-    
-    </summary>
-    
-      <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
-    
-    
-      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>玩不动-python</title>
-    <link href="http://yoursite.com/2018/11/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8-python/"/>
-    <id>http://yoursite.com/2018/11/26/玩不动-python/</id>
-    <published>2018-11-26T06:22:08.000Z</published>
-    <updated>2018-11-27T13:15:48.488Z</updated>
+    <updated>2018-11-27T13:32:02.109Z</updated>
     
     <content type="html"><![CDATA[<h4 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int2 = functools.partial(int, base=2)</div></pre></td></tr></table></figure><p>可以生成一个函数，默认填写了一些参数。</p><h4 id="数组的迭代函数"><a href="#数组的迭代函数" class="headerlink" title="数组的迭代函数"></a>数组的迭代函数</h4><ol><li>map</li><li>reduce</li><li>filter</li><li>sorted</li></ol><p>都是单纯的函数，而不是作为类的一个方法。体现了函数式编程的哲学</p><h4 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h4><ul><li>类和对象的属性是可以在创建完以后在进行赋值。</li><li>限制实例的属性</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">    __slots__ = (&apos;name&apos;, &apos;age&apos;) # 用tuple定义允许绑定的属性名称</div></pre></td></tr></table></figure><ul><li>使用来property装饰器来实现定义set和get</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line"></div><div class="line">    @property</div><div class="line">    def score(self):</div><div class="line">        return self._score</div><div class="line"></div><div class="line">    @score.setter</div><div class="line">    def score(self, value):</div><div class="line">        if not isinstance(value, int):</div><div class="line">            raise ValueError(&apos;score must be an integer!&apos;)</div><div class="line">        if value &lt; 0 or value &gt; 100:</div><div class="line">            raise ValueError(&apos;score must between 0 ~ 100!&apos;)</div><div class="line">        self._score = value</div></pre></td></tr></table></figure><ul><li>type可以用来创建动态创建类</li></ul><figure class="highlight plain"><figcaption><span>def fn(self, name='world'): # 先定义函数</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">...     print(&apos;Hello, %s.&apos; % name)</div><div class="line">...</div><div class="line">&gt;&gt;&gt; Hello = type(&apos;Hello&apos;, (object,), dict(hello=fn)) # 创建Hello class</div><div class="line">&gt;&gt;&gt; h = Hello()</div><div class="line">&gt;&gt;&gt; h.hello()</div><div class="line">Hello, world.</div><div class="line">&gt;&gt;&gt; print(type(Hello))</div><div class="line">&lt;class &apos;type&apos;&gt;</div><div class="line">&gt;&gt;&gt; print(type(h))</div><div class="line">&lt;class &apos;__main__.Hello&apos;&gt;</div></pre></td></tr></table></figure>]]></content>
     
@@ -62,41 +37,88 @@
       <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
     
     
-      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
   </entry>
   
   <entry>
-    <title>javascript 的高阶用法</title>
-    <link href="http://yoursite.com/2018/10/26/javascript%20%E9%AB%98%E9%98%B6%E7%94%A8%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/10/26/javascript 高阶用法/</id>
-    <published>2018-10-26T06:22:08.000Z</published>
-    <updated>2018-11-27T11:55:14.218Z</updated>
+    <title>TARO玩不动啊</title>
+    <link href="http://yoursite.com/2018/11/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8/%E7%8E%A9%E4%B8%8D%E5%8A%A8_taro/"/>
+    <id>http://yoursite.com/2018/11/26/玩不动/玩不动_taro/</id>
+    <published>2018-11-26T06:22:08.000Z</published>
+    <updated>2018-11-27T13:32:13.179Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="获取数组中的值"><a href="#获取数组中的值" class="headerlink" title="获取数组中的值"></a>获取数组中的值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var foo = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];</div><div class="line"></div><div class="line">var [one, two, three] = foo;</div><div class="line">console.log(one); // &quot;one&quot;</div><div class="line">console.log(two); // &quot;two&quot;</div><div class="line">console.log(three); // &quot;three&quot;</div><div class="line"></div><div class="line">//如果你要忽略某些值，你可以按照下面的写法获取你想要的值</div><div class="line">var [first, , , last] = foo;</div><div class="line">console.log(first); // &quot;one&quot;</div><div class="line">console.log(last); // &quot;four&quot;</div><div class="line"></div><div class="line">//你也可以这样写</div><div class="line">var a, b; //先声明变量</div><div class="line"></div><div class="line">[a, b] = [1, 2];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 2</div></pre></td></tr></table></figure><p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a, b;</div><div class="line"></div><div class="line">[a=5, b=7] = [1];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 7</div></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>页面的样式文件建议放在与页面JS的同级目录下，然后通过ES6规范 import 进行引入，支持使用 CSS 预编译处理器，目前提供了 sass 预编译插件 @tarojs/plugin-sass，需要自行在本地进行安装。</p><p>页面JS要求必须有一个 render 函数，函数返回 JSX 代码，具体 JSX 代码的写法请参考 JSX章节。</p><p>由于页面JS也继承自 Component 组件基类，所以页面同样拥有生命周期，页面的生命周期方法如下：</p><p>生命周期方法    作用    说明<br>componentWillMount    页面被载入    在微信小程序中这一生命周期方法对应 onLoad<br>componentDidMount    页面渲染完成    在微信小程序中这一生命周期方法对应 onReady<br>shouldComponentUpdate    页面是否需要更新<br>componentWillUpdate    页面即将更新<br>componentDidUpdate    页面更新完毕<br>componentWillUnmount    页面退出    在微信小程序中这一生命周期方法对应 onUnload<br>componentDidShow    页面展示出来    在微信小程序中这一生命周期方法对应 onShow，在H5中同样实现<br>componentDidHide    页面被隐藏    在微信小程序中这一生命周期方法对应 onHide，在H5中同样实现</p><p>微信小程序中 onLoad 通常带有一个参数 options，在 Taro 中你可以在所有生命周期方法中通过 this.$router.params 访问到，在其他端也适用</p><h2 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h2><h4 id="app-less引入其他的test-less文件，修改后发现没有实时变化"><a href="#app-less引入其他的test-less文件，修改后发现没有实时变化" class="headerlink" title="app.less引入其他的test.less文件，修改后发现没有实时变化"></a>app.less引入其他的test.less文件，修改后发现没有实时变化</h4><p><strong>问题描述：</strong><br>编译的时候会将test.less的数据编译复制到 app.less 中。<br>但是修改test.less会生成一个 test.wxss。这个文件没有被任何文件import进入，所以无法实时渲染。</p><p>解决办法：需要在app.js单独import进去，或者直接内容写入到app.less当中。</p><h4 id="设置了componentCatchError-无法生效，无法设置全局错误处理"><a href="#设置了componentCatchError-无法生效，无法设置全局错误处理" class="headerlink" title="设置了componentCatchError 无法生效，无法设置全局错误处理"></a>设置了componentCatchError 无法生效，无法设置全局错误处理</h4>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;获取数组中的值&quot;&gt;&lt;a href=&quot;#获取数组中的值&quot; class=&quot;headerlink&quot; title=&quot;获取数组中的值&quot;&gt;&lt;/a&gt;获取数组中的值&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
+        &lt;h2 id=&quot;生命周期&quot;&gt;&lt;a href=&quot;#生命周期&quot; class=&quot;headerlink&quot; title=&quot;生命周期&quot;&gt;&lt;/a&gt;生命周期&lt;/h2&gt;&lt;p&gt;页面的样式文件建议放在与页面JS的同级目录下，然后通过ES6规范 import 进行引入，支持使用 CSS 预编译处理器，目
       
     
     </summary>
     
-      <category term="开发语言" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/"/>
+      <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
     
-    
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   
   <entry>
-    <title>react-native 遇到的坑</title>
-    <link href="http://yoursite.com/2018/10/26/react_naitve%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
-    <id>http://yoursite.com/2018/10/26/react_naitve遇到的坑/</id>
+    <title>idea很多坑</title>
+    <link href="http://yoursite.com/2018/10/26/%E5%BE%88%E5%A4%9A%E5%9D%91/%E5%BE%88%E5%A4%9A%E5%9D%91_idea/"/>
+    <id>http://yoursite.com/2018/10/26/很多坑/很多坑_idea/</id>
     <published>2018-10-26T06:22:08.000Z</published>
-    <updated>2018-11-27T11:55:07.712Z</updated>
+    <updated>2018-11-27T13:31:53.842Z</updated>
+    
+    <content type="html"><![CDATA[<p>长时间使用idea以后，已经没办法抛弃了。主要是因为他强大的提示和调试功能。<br>但是相应的，也长期被他的卡顿所困挠。<br>从网上查找了一些资料，我们一步步来解决他的问题。</p><h3 id="取消除了Error级别之外的代码检查"><a href="#取消除了Error级别之外的代码检查" class="headerlink" title="取消除了Error级别之外的代码检查"></a>取消除了Error级别之外的代码检查</h3><p>IntelliJ的代码检测功能非常强大，但同时也占用了一些资源，可以将默认的除 Error之外的其他级别的检测都去掉，先做下面的筛选，然后逐个勾掉即可：<br><img src="http://img.iqqxc.cn/15433251754455.jpg" alt=""></p><h3 id="清空缓存并重建索引"><a href="#清空缓存并重建索引" class="headerlink" title="清空缓存并重建索引"></a>清空缓存并重建索引</h3><p>在做完上述设置之后，最好通过点击 File -&gt; Invalidate Caches / Restart…菜单，然后点击 Invalidate and Restart按钮清空并重建索引，然后重启。再次启动程序之后，会首先重建索引和缓存。</p><h3 id="git插件禁用"><a href="#git插件禁用" class="headerlink" title="git插件禁用"></a>git插件禁用</h3><p>大杀器。不知道为什么能这么差，直接即用git。立马流畅</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;长时间使用idea以后，已经没办法抛弃了。主要是因为他强大的提示和调试功能。&lt;br&gt;但是相应的，也长期被他的卡顿所困挠。&lt;br&gt;从网上查找了一些资料，我们一步步来解决他的问题。&lt;/p&gt;
+&lt;h3 id=&quot;取消除了Error级别之外的代码检查&quot;&gt;&lt;a href=&quot;#取消除了Er
+      
+    
+    </summary>
+    
+      <category term="很多坑" scheme="http://yoursite.com/categories/%E5%BE%88%E5%A4%9A%E5%9D%91/"/>
+    
+    
+      <category term="react-native" scheme="http://yoursite.com/tags/react-native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小程序很多坑</title>
+    <link href="http://yoursite.com/2018/10/26/%E5%BE%88%E5%A4%9A%E5%9D%91/%E5%BE%88%E5%A4%9A%E5%9D%91_%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://yoursite.com/2018/10/26/很多坑/很多坑_小程序/</id>
+    <published>2018-10-26T06:22:08.000Z</published>
+    <updated>2018-11-27T13:31:47.669Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="微信小程序遇到的坑"><a href="#微信小程序遇到的坑" class="headerlink" title="微信小程序遇到的坑"></a>微信小程序遇到的坑</h1><p><strong>小程序的http方法不支持PATCH方法</strong><br>丧尽天良，让我们使用 restful设计的后台接口如何是好。只能先修改PUT方法来进行兼容了。</p><h3 id="小程序中无法支持公众号的H5支付"><a href="#小程序中无法支持公众号的H5支付" class="headerlink" title="小程序中无法支持公众号的H5支付"></a>小程序中无法支持公众号的H5支付</h3><p>在公众号开启调试模式的时候，是可以进行使用 web-view来进行公众号的H5支付的。<br>但是关闭之后，会发现支付不了。<br>这个功能应该是被腾讯给禁掉了，不允许在小程序进行公众号的支付，需要申请 服务商 来进行小程序的代理支付。</p><h3 id="小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。"><a href="#小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。" class="headerlink" title="小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。"></a>小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。</h3><p>从提示可以看到，我们明明是发起https的网址，却被重定向到http了。<br>这是因为公众号需要进行权限认证，在配置redirct_url的时候，可能会因为错误获取了协议所以，redirect_url是http协议的。（我们使用了nginx）<br>这时候需要在nginx传输一个自定义的报头传入schema，而在后台通过这个报头来进行判断是否是ssl。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;微信小程序遇到的坑&quot;&gt;&lt;a href=&quot;#微信小程序遇到的坑&quot; class=&quot;headerlink&quot; title=&quot;微信小程序遇到的坑&quot;&gt;&lt;/a&gt;微信小程序遇到的坑&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;小程序的http方法不支持PATCH方法&lt;/strong&gt;&lt;br&gt;丧
+      
+    
+    </summary>
+    
+      <category term="很多坑" scheme="http://yoursite.com/categories/%E5%BE%88%E5%A4%9A%E5%9D%91/"/>
+    
+    
+      <category term="小程序" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>很多坑 react-native</title>
+    <link href="http://yoursite.com/2018/10/26/%E5%BE%88%E5%A4%9A%E5%9D%91/%E5%BE%88%E5%A4%9A%E5%9D%91_react_naitve/"/>
+    <id>http://yoursite.com/2018/10/26/很多坑/很多坑_react_naitve/</id>
+    <published>2018-10-26T06:22:08.000Z</published>
+    <updated>2018-11-27T13:23:55.456Z</updated>
     
     <content type="html"><![CDATA[<h2 id="android-方面的一些问题"><a href="#android-方面的一些问题" class="headerlink" title="android 方面的一些问题"></a>android 方面的一些问题</h2><p><strong>webview 加载本地文件，调试的时候正常，编译后不正常。</strong><br>需要把对应的文件 copy 到 android/assets。</p><p><strong>PermissionsAndroid的 request 和 check 方法总是返回 True.</strong><br>修改 app/build.gradle 的 targetSdkVersion 在23之上。</p><h2 id="使用框架的一些问题"><a href="#使用框架的一些问题" class="headerlink" title="使用框架的一些问题"></a>使用框架的一些问题</h2><p><a href="https://github.com/dvajs/dva/issues/1222" target="_blank" rel="external">dva2 onError 处理的异常仍然抛出</a><br><a href="https://github.com/crazycodeboy/react-native-splash-screen/issues/219" target="_blank" rel="external">react-native-splash-screen编译出错</a><br>切换到v3.0.6能够解决问题</p>]]></content>
     
@@ -109,7 +131,7 @@
     
     </summary>
     
-      <category term="框架的坑" scheme="http://yoursite.com/categories/%E6%A1%86%E6%9E%B6%E7%9A%84%E5%9D%91/"/>
+      <category term="很多坑" scheme="http://yoursite.com/categories/%E5%BE%88%E5%A4%9A%E5%9D%91/"/>
     
     
       <category term="react-native" scheme="http://yoursite.com/tags/react-native/"/>
@@ -117,11 +139,36 @@
   </entry>
   
   <entry>
-    <title>电影 昆池岩</title>
-    <link href="http://yoursite.com/2018/05/26/%E6%98%86%E6%B1%A0%E5%B2%A9/"/>
-    <id>http://yoursite.com/2018/05/26/昆池岩/</id>
+    <title>javascript玩不动啊</title>
+    <link href="http://yoursite.com/2018/10/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8/%E7%8E%A9%E4%B8%8D%E5%8A%A8_javascript/"/>
+    <id>http://yoursite.com/2018/10/26/玩不动/玩不动_javascript/</id>
+    <published>2018-10-26T06:22:08.000Z</published>
+    <updated>2018-11-27T13:32:30.337Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="获取数组中的值"><a href="#获取数组中的值" class="headerlink" title="获取数组中的值"></a>获取数组中的值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var foo = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];</div><div class="line"></div><div class="line">var [one, two, three] = foo;</div><div class="line">console.log(one); // &quot;one&quot;</div><div class="line">console.log(two); // &quot;two&quot;</div><div class="line">console.log(three); // &quot;three&quot;</div><div class="line"></div><div class="line">//如果你要忽略某些值，你可以按照下面的写法获取你想要的值</div><div class="line">var [first, , , last] = foo;</div><div class="line">console.log(first); // &quot;one&quot;</div><div class="line">console.log(last); // &quot;four&quot;</div><div class="line"></div><div class="line">//你也可以这样写</div><div class="line">var a, b; //先声明变量</div><div class="line"></div><div class="line">[a, b] = [1, 2];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 2</div></pre></td></tr></table></figure><p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a, b;</div><div class="line"></div><div class="line">[a=5, b=7] = [1];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 7</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;获取数组中的值&quot;&gt;&lt;a href=&quot;#获取数组中的值&quot; class=&quot;headerlink&quot; title=&quot;获取数组中的值&quot;&gt;&lt;/a&gt;获取数组中的值&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
+      
+    
+    </summary>
+    
+      <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>昆池岩看尿了</title>
+    <link href="http://yoursite.com/2018/05/26/%E7%9C%8B%E5%B0%BF%E4%BA%86/%E6%98%86%E6%B1%A0%E5%B2%A9/"/>
+    <id>http://yoursite.com/2018/05/26/看尿了/昆池岩/</id>
     <published>2018-05-26T06:22:08.000Z</published>
-    <updated>2018-10-26T04:01:16.094Z</updated>
+    <updated>2018-11-27T13:34:25.203Z</updated>
     
     <content type="html"><![CDATA[<p>晚上，跟朋友看完了 有点心惊胆战 估计是因为黑眼球的女鬼盯着我让我瘆得慌<br>这部片我看了两遍 第一遍看完，觉得会是个彩蛋很多的恐怖片。二刷发现其实不多，可能真的为了省钱不怎么用心吧。</p><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>这个精神病院其实是个人体实验基地，人体实验中死了很多人，当然也把很多人搞的越来越疯，从拿娃娃的男人可以看出来。</p><p>病人一开始还是比较清醒的样子<br><img src="http://img.iqqxc.cn/15273003894662.jpg" alt="折磨前"></p><p>拍照的时候已经神志不清了<br><img src="http://img.iqqxc.cn/15273004607810.jpg" alt="折磨后"></p><p>在朴正熙被刺杀后，为了掩盖真相，院长和相关部门把所有病人都杀死在402房间。从照片可以看出他们都是背对着墙壁，应该是最后被杀死的情景。<br><img src="http://img.iqqxc.cn/15273004699161.jpg" alt=""></p><p>而为了保守秘密，估计院长也是被动自杀在三楼浴室了。<br><img src="http://img.iqqxc.cn/15273004807866.jpg" alt=""></p><h3 id="冒险"><a href="#冒险" class="headerlink" title="冒险"></a>冒险</h3><p>从此这里变成了各路胆大人士的冒险之处。<br>一开始的两个傻乎乎的学生，就莫名其妙地没了，因为他们发现有一双眼睛看着他们。<br><img src="http://img.iqqxc.cn/15273004921503.jpg" alt=""></p><p>30年前来冒险的大学生，也出现在402房间里面。<br><img src="http://img.iqqxc.cn/15273005013090.jpg" alt=""></p><p>有一些很奇怪的地方，比如如果里面的鬼魂要杀人。为什么会有那么多提醒性的涂鸦留下来，那些冒险的人真的有功夫留下这些涂鸦来警示后人吗？<br><img src="http://img.iqqxc.cn/15273005094532.jpg" alt=""></p><p>我想想以前看的精神病片子，瞬间 GET。<br>精神病人的行为都是怎么样的呢？他们有的需要你陪他们玩，有的很冷漠，有的却很暴力。</p><h3 id="杀人逻辑"><a href="#杀人逻辑" class="headerlink" title="杀人逻辑"></a>杀人逻辑</h3><p>从片中出现的超自然现象可以看出里面的鬼魂有两种行为：</p><p>警告/恶作剧</p><ul><li>队长在监控的时候出现的各种断电，生火，水杯翻掉和视频提示。</li><li>通灵仪式过后，队长和两个队员的通话过程中，铃铛自己动了一下。（好像都没人发现）</li><li>院长办公室的门自己关上。</li><li>把手深入箱子的时候，被抓住。</li><li>妹子的围巾被拉起来。</li><li>兵乓球的声音。</li><li>实验室里面的死鸡。</li></ul><p>暴力杀害</p><ul><li>器械室各种自己飞起来的器械</li><li>402房间内对队员们的各种杀害</li></ul><p>影片中还说明了3楼和4楼是比较容易出现鬼魂的地方，从事情发生我们也看到所有人都是死在3楼和4楼。<br>我们了解一下了大楼结构发现：<br><img src="http://img.iqqxc.cn/15273005209398.jpg" alt=""></p><p>1楼和2楼死的人是工作人员的活动空间。<br>3楼和4楼是精神病人的活动区域和房间。</p><p>整个鬼魂群体的想法并不是一致的，大部分行为表现起来简直是在玩弄人类一样。</p><h3 id="暗喻"><a href="#暗喻" class="headerlink" title="暗喻"></a>暗喻</h3><p>差不多可以理解，其实里面还是有另外一股力量是希望这些人能知难而退的，只是他们作死的太厉害。</p><p>从影片开始到最后，402的门一直没有被打开，这可能象征着这个精神病院的事情永远不允许被公开。<br> 402房间房顶还有一滩水，没理解错的话应该是连到3楼的浴池。浴池又是院长上吊的地方，所以浴池可能是能进入402唯一的门，而守门人也就是院长本人的鬼魂。他会把所有人都通过浴池，扔到402房间去送死。</p><p>这个电影的大 boos 也就是院长本人了，给她那么多奖状真是没有白发。</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这并不是一个值得深挖的电影，找了好久也没发现什么隐藏的鬼脸之类的，甚是失望。<br>但是在家里投影到大屏幕，音效开起来，足以把妹子吓唬地把你抱得紧紧的。</p>]]></content>
     
@@ -135,7 +182,7 @@
     
     </summary>
     
-      <category term="电影" scheme="http://yoursite.com/categories/%E7%94%B5%E5%BD%B1/"/>
+      <category term="看尿了" scheme="http://yoursite.com/categories/%E7%9C%8B%E5%B0%BF%E4%BA%86/"/>
     
     
       <category term="恐怖" scheme="http://yoursite.com/tags/%E6%81%90%E6%80%96/"/>

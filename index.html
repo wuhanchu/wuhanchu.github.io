@@ -234,7 +234,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/玩不动-taro/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/玩不动/玩不动_python/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="岳不虚">
@@ -253,7 +253,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/26/玩不动-taro/" itemprop="url">玩不动taro</a></h1>
+                <a class="post-title-link" href="/2018/11/26/玩不动/玩不动_python/" itemprop="url">python玩不动啊</a></h1>
         
 
         <div class="post-meta">
@@ -306,168 +306,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/26/玩不动-taro/#comments" itemprop="discussionUrl">
+                <a href="/2018/11/26/玩不动/玩不动_python/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/26/玩不动-taro/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>页面的样式文件建议放在与页面JS的同级目录下，然后通过ES6规范 import 进行引入，支持使用 CSS 预编译处理器，目前提供了 sass 预编译插件 @tarojs/plugin-sass，需要自行在本地进行安装。</p>
-<p>页面JS要求必须有一个 render 函数，函数返回 JSX 代码，具体 JSX 代码的写法请参考 JSX章节。</p>
-<p>由于页面JS也继承自 Component 组件基类，所以页面同样拥有生命周期，页面的生命周期方法如下：</p>
-<p>生命周期方法    作用    说明<br>componentWillMount    页面被载入    在微信小程序中这一生命周期方法对应 onLoad<br>componentDidMount    页面渲染完成    在微信小程序中这一生命周期方法对应 onReady<br>shouldComponentUpdate    页面是否需要更新<br>componentWillUpdate    页面即将更新<br>componentDidUpdate    页面更新完毕<br>componentWillUnmount    页面退出    在微信小程序中这一生命周期方法对应 onUnload<br>componentDidShow    页面展示出来    在微信小程序中这一生命周期方法对应 onShow，在H5中同样实现<br>componentDidHide    页面被隐藏    在微信小程序中这一生命周期方法对应 onHide，在H5中同样实现</p>
-<p>微信小程序中 onLoad 通常带有一个参数 options，在 Taro 中你可以在所有生命周期方法中通过 this.$router.params 访问到，在其他端也适用</p>
-<h2 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h2><h4 id="app-less引入其他的test-less文件，修改后发现没有实时变化"><a href="#app-less引入其他的test-less文件，修改后发现没有实时变化" class="headerlink" title="app.less引入其他的test.less文件，修改后发现没有实时变化"></a>app.less引入其他的test.less文件，修改后发现没有实时变化</h4><p><strong>问题描述：</strong><br>编译的时候会将test.less的数据编译复制到 app.less 中。<br>但是修改test.less会生成一个 test.wxss。这个文件没有被任何文件import进入，所以无法实时渲染。</p>
-<p>解决办法：需要在app.js单独import进去，或者直接内容写入到app.less当中。</p>
-<h4 id="设置了componentCatchError-无法生效，无法设置全局错误处理"><a href="#设置了componentCatchError-无法生效，无法设置全局错误处理" class="headerlink" title="设置了componentCatchError 无法生效，无法设置全局错误处理"></a>设置了componentCatchError 无法生效，无法设置全局错误处理</h4>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/玩不动-python/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="岳不虚">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="越来越虚了">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/26/玩不动-python/" itemprop="url">玩不动-python</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-26T14:22:08+08:00">
-                2018-11-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/玩不动/" itemprop="url" rel="index">
-                    <span itemprop="name">玩不动</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/26/玩不动-python/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/26/玩不动-python/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/11/26/玩不动/玩不动_python/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -566,7 +407,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/javascript 高阶用法/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/玩不动/玩不动_taro/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="岳不虚">
@@ -585,7 +426,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/26/javascript 高阶用法/" itemprop="url">javascript 的高阶用法</a></h1>
+                <a class="post-title-link" href="/2018/11/26/玩不动/玩不动_taro/" itemprop="url">TARO玩不动啊</a></h1>
         
 
         <div class="post-meta">
@@ -597,8 +438,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-26T14:22:08+08:00">
-                2018-10-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-26T14:22:08+08:00">
+                2018-11-26
               </time>
             
 
@@ -620,8 +461,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/开发语言/" itemprop="url" rel="index">
-                    <span itemprop="name">开发语言</span>
+                  <a href="/categories/玩不动/" itemprop="url" rel="index">
+                    <span itemprop="name">玩不动</span>
                   </a>
                 </span>
 
@@ -638,9 +479,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/26/javascript 高阶用法/#comments" itemprop="discussionUrl">
+                <a href="/2018/11/26/玩不动/玩不动_taro/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/10/26/javascript 高阶用法/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/11/26/玩不动/玩不动_taro/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -670,9 +511,14 @@
       
         
           
-            <h4 id="获取数组中的值"><a href="#获取数组中的值" class="headerlink" title="获取数组中的值"></a>获取数组中的值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var foo = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];</div><div class="line"></div><div class="line">var [one, two, three] = foo;</div><div class="line">console.log(one); // &quot;one&quot;</div><div class="line">console.log(two); // &quot;two&quot;</div><div class="line">console.log(three); // &quot;three&quot;</div><div class="line"></div><div class="line">//如果你要忽略某些值，你可以按照下面的写法获取你想要的值</div><div class="line">var [first, , , last] = foo;</div><div class="line">console.log(first); // &quot;one&quot;</div><div class="line">console.log(last); // &quot;four&quot;</div><div class="line"></div><div class="line">//你也可以这样写</div><div class="line">var a, b; //先声明变量</div><div class="line"></div><div class="line">[a, b] = [1, 2];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 2</div></pre></td></tr></table></figure>
-<p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a, b;</div><div class="line"></div><div class="line">[a=5, b=7] = [1];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 7</div></pre></td></tr></table></figure>
+            <h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p>页面的样式文件建议放在与页面JS的同级目录下，然后通过ES6规范 import 进行引入，支持使用 CSS 预编译处理器，目前提供了 sass 预编译插件 @tarojs/plugin-sass，需要自行在本地进行安装。</p>
+<p>页面JS要求必须有一个 render 函数，函数返回 JSX 代码，具体 JSX 代码的写法请参考 JSX章节。</p>
+<p>由于页面JS也继承自 Component 组件基类，所以页面同样拥有生命周期，页面的生命周期方法如下：</p>
+<p>生命周期方法    作用    说明<br>componentWillMount    页面被载入    在微信小程序中这一生命周期方法对应 onLoad<br>componentDidMount    页面渲染完成    在微信小程序中这一生命周期方法对应 onReady<br>shouldComponentUpdate    页面是否需要更新<br>componentWillUpdate    页面即将更新<br>componentDidUpdate    页面更新完毕<br>componentWillUnmount    页面退出    在微信小程序中这一生命周期方法对应 onUnload<br>componentDidShow    页面展示出来    在微信小程序中这一生命周期方法对应 onShow，在H5中同样实现<br>componentDidHide    页面被隐藏    在微信小程序中这一生命周期方法对应 onHide，在H5中同样实现</p>
+<p>微信小程序中 onLoad 通常带有一个参数 options，在 Taro 中你可以在所有生命周期方法中通过 this.$router.params 访问到，在其他端也适用</p>
+<h2 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h2><h4 id="app-less引入其他的test-less文件，修改后发现没有实时变化"><a href="#app-less引入其他的test-less文件，修改后发现没有实时变化" class="headerlink" title="app.less引入其他的test.less文件，修改后发现没有实时变化"></a>app.less引入其他的test.less文件，修改后发现没有实时变化</h4><p><strong>问题描述：</strong><br>编译的时候会将test.less的数据编译复制到 app.less 中。<br>但是修改test.less会生成一个 test.wxss。这个文件没有被任何文件import进入，所以无法实时渲染。</p>
+<p>解决办法：需要在app.js单独import进去，或者直接内容写入到app.less当中。</p>
+<h4 id="设置了componentCatchError-无法生效，无法设置全局错误处理"><a href="#设置了componentCatchError-无法生效，无法设置全局错误处理" class="headerlink" title="设置了componentCatchError 无法生效，无法设置全局错误处理"></a>设置了componentCatchError 无法生效，无法设置全局错误处理</h4>
           
         
       
@@ -720,7 +566,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/react_naitve遇到的坑/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/很多坑/很多坑_idea/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="岳不虚">
@@ -739,7 +585,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/26/react_naitve遇到的坑/" itemprop="url">react-native 遇到的坑</a></h1>
+                <a class="post-title-link" href="/2018/10/26/很多坑/很多坑_idea/" itemprop="url">idea很多坑</a></h1>
         
 
         <div class="post-meta">
@@ -774,8 +620,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/框架的坑/" itemprop="url" rel="index">
-                    <span itemprop="name">框架的坑</span>
+                  <a href="/categories/很多坑/" itemprop="url" rel="index">
+                    <span itemprop="name">很多坑</span>
                   </a>
                 </span>
 
@@ -792,9 +638,320 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/10/26/react_naitve遇到的坑/#comments" itemprop="discussionUrl">
+                <a href="/2018/10/26/很多坑/很多坑_idea/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/10/26/react_naitve遇到的坑/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/10/26/很多坑/很多坑_idea/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>长时间使用idea以后，已经没办法抛弃了。主要是因为他强大的提示和调试功能。<br>但是相应的，也长期被他的卡顿所困挠。<br>从网上查找了一些资料，我们一步步来解决他的问题。</p>
+<h3 id="取消除了Error级别之外的代码检查"><a href="#取消除了Error级别之外的代码检查" class="headerlink" title="取消除了Error级别之外的代码检查"></a>取消除了Error级别之外的代码检查</h3><p>IntelliJ的代码检测功能非常强大，但同时也占用了一些资源，可以将默认的除 Error之外的其他级别的检测都去掉，先做下面的筛选，然后逐个勾掉即可：<br><img src="http://img.iqqxc.cn/15433251754455.jpg" alt=""></p>
+<h3 id="清空缓存并重建索引"><a href="#清空缓存并重建索引" class="headerlink" title="清空缓存并重建索引"></a>清空缓存并重建索引</h3><p>在做完上述设置之后，最好通过点击 File -&gt; Invalidate Caches / Restart…菜单，然后点击 Invalidate and Restart按钮清空并重建索引，然后重启。再次启动程序之后，会首先重建索引和缓存。</p>
+<h3 id="git插件禁用"><a href="#git插件禁用" class="headerlink" title="git插件禁用"></a>git插件禁用</h3><p>大杀器。不知道为什么能这么差，直接即用git。立马流畅</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/很多坑/很多坑_小程序/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="岳不虚">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="越来越虚了">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/26/很多坑/很多坑_小程序/" itemprop="url">小程序很多坑</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-26T14:22:08+08:00">
+                2018-10-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/很多坑/" itemprop="url" rel="index">
+                    <span itemprop="name">很多坑</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/26/很多坑/很多坑_小程序/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/10/26/很多坑/很多坑_小程序/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="微信小程序遇到的坑"><a href="#微信小程序遇到的坑" class="headerlink" title="微信小程序遇到的坑"></a>微信小程序遇到的坑</h1><p><strong>小程序的http方法不支持PATCH方法</strong><br>丧尽天良，让我们使用 restful设计的后台接口如何是好。只能先修改PUT方法来进行兼容了。</p>
+<h3 id="小程序中无法支持公众号的H5支付"><a href="#小程序中无法支持公众号的H5支付" class="headerlink" title="小程序中无法支持公众号的H5支付"></a>小程序中无法支持公众号的H5支付</h3><p>在公众号开启调试模式的时候，是可以进行使用 web-view来进行公众号的H5支付的。<br>但是关闭之后，会发现支付不了。<br>这个功能应该是被腾讯给禁掉了，不允许在小程序进行公众号的支付，需要申请 服务商 来进行小程序的代理支付。</p>
+<h3 id="小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。"><a href="#小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。" class="headerlink" title="小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。"></a>小程序当中使用webview来打开公众号的网页，会发现无法授权的请求。</h3><p>从提示可以看到，我们明明是发起https的网址，却被重定向到http了。<br>这是因为公众号需要进行权限认证，在配置redirct_url的时候，可能会因为错误获取了协议所以，redirect_url是http协议的。（我们使用了nginx）<br>这时候需要在nginx传输一个自定义的报头传入schema，而在后台通过这个报头来进行判断是否是ssl。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/很多坑/很多坑_react_naitve/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="岳不虚">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="越来越虚了">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/26/很多坑/很多坑_react_naitve/" itemprop="url">很多坑 react-native</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-26T14:22:08+08:00">
+                2018-10-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/很多坑/" itemprop="url" rel="index">
+                    <span itemprop="name">很多坑</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/26/很多坑/很多坑_react_naitve/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/10/26/很多坑/很多坑_react_naitve/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -875,7 +1032,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/昆池岩/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/玩不动/玩不动_javascript/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="岳不虚">
@@ -894,7 +1051,161 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/26/昆池岩/" itemprop="url">电影 昆池岩</a></h1>
+                <a class="post-title-link" href="/2018/10/26/玩不动/玩不动_javascript/" itemprop="url">javascript玩不动啊</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-26T14:22:08+08:00">
+                2018-10-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/玩不动/" itemprop="url" rel="index">
+                    <span itemprop="name">玩不动</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/26/玩不动/玩不动_javascript/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/10/26/玩不动/玩不动_javascript/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="获取数组中的值"><a href="#获取数组中的值" class="headerlink" title="获取数组中的值"></a>获取数组中的值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var foo = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];</div><div class="line"></div><div class="line">var [one, two, three] = foo;</div><div class="line">console.log(one); // &quot;one&quot;</div><div class="line">console.log(two); // &quot;two&quot;</div><div class="line">console.log(three); // &quot;three&quot;</div><div class="line"></div><div class="line">//如果你要忽略某些值，你可以按照下面的写法获取你想要的值</div><div class="line">var [first, , , last] = foo;</div><div class="line">console.log(first); // &quot;one&quot;</div><div class="line">console.log(last); // &quot;four&quot;</div><div class="line"></div><div class="line">//你也可以这样写</div><div class="line">var a, b; //先声明变量</div><div class="line"></div><div class="line">[a, b] = [1, 2];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 2</div></pre></td></tr></table></figure>
+<p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a, b;</div><div class="line"></div><div class="line">[a=5, b=7] = [1];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 7</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/看尿了/昆池岩/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="岳不虚">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="越来越虚了">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/26/看尿了/昆池岩/" itemprop="url">昆池岩看尿了</a></h1>
         
 
         <div class="post-meta">
@@ -929,8 +1240,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/电影/" itemprop="url" rel="index">
-                    <span itemprop="name">电影</span>
+                  <a href="/categories/看尿了/" itemprop="url" rel="index">
+                    <span itemprop="name">看尿了</span>
                   </a>
                 </span>
 
@@ -947,9 +1258,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/26/昆池岩/#comments" itemprop="discussionUrl">
+                <a href="/2018/05/26/看尿了/昆池岩/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/05/26/昆池岩/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/05/26/看尿了/昆池岩/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1093,7 +1404,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1104,7 +1415,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
