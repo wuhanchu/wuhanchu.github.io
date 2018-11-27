@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-27T13:32:02.109Z</updated>
+  <updated>2018-11-27T13:32:13.179Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>python玩不动啊</title>
-    <link href="http://yoursite.com/2018/11/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8/%E7%8E%A9%E4%B8%8D%E5%8A%A8_python/"/>
-    <id>http://yoursite.com/2018/11/26/玩不动/玩不动_python/</id>
-    <published>2018-11-26T06:22:08.000Z</published>
-    <updated>2018-11-27T13:32:02.109Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int2 = functools.partial(int, base=2)</div></pre></td></tr></table></figure><p>可以生成一个函数，默认填写了一些参数。</p><h4 id="数组的迭代函数"><a href="#数组的迭代函数" class="headerlink" title="数组的迭代函数"></a>数组的迭代函数</h4><ol><li>map</li><li>reduce</li><li>filter</li><li>sorted</li></ol><p>都是单纯的函数，而不是作为类的一个方法。体现了函数式编程的哲学</p><h4 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h4><ul><li>类和对象的属性是可以在创建完以后在进行赋值。</li><li>限制实例的属性</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">    __slots__ = (&apos;name&apos;, &apos;age&apos;) # 用tuple定义允许绑定的属性名称</div></pre></td></tr></table></figure><ul><li>使用来property装饰器来实现定义set和get</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line"></div><div class="line">    @property</div><div class="line">    def score(self):</div><div class="line">        return self._score</div><div class="line"></div><div class="line">    @score.setter</div><div class="line">    def score(self, value):</div><div class="line">        if not isinstance(value, int):</div><div class="line">            raise ValueError(&apos;score must be an integer!&apos;)</div><div class="line">        if value &lt; 0 or value &gt; 100:</div><div class="line">            raise ValueError(&apos;score must between 0 ~ 100!&apos;)</div><div class="line">        self._score = value</div></pre></td></tr></table></figure><ul><li>type可以用来创建动态创建类</li></ul><figure class="highlight plain"><figcaption><span>def fn(self, name='world'): # 先定义函数</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">...     print(&apos;Hello, %s.&apos; % name)</div><div class="line">...</div><div class="line">&gt;&gt;&gt; Hello = type(&apos;Hello&apos;, (object,), dict(hello=fn)) # 创建Hello class</div><div class="line">&gt;&gt;&gt; h = Hello()</div><div class="line">&gt;&gt;&gt; h.hello()</div><div class="line">Hello, world.</div><div class="line">&gt;&gt;&gt; print(type(Hello))</div><div class="line">&lt;class &apos;type&apos;&gt;</div><div class="line">&gt;&gt;&gt; print(type(h))</div><div class="line">&lt;class &apos;__main__.Hello&apos;&gt;</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;偏函数&quot;&gt;&lt;a href=&quot;#偏函数&quot; class=&quot;headerlink&quot; title=&quot;偏函数&quot;&gt;&lt;/a&gt;偏函数&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;d
-      
-    
-    </summary>
-    
-      <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>TARO玩不动啊</title>
@@ -53,6 +30,29 @@
       
       
         &lt;h2 id=&quot;生命周期&quot;&gt;&lt;a href=&quot;#生命周期&quot; class=&quot;headerlink&quot; title=&quot;生命周期&quot;&gt;&lt;/a&gt;生命周期&lt;/h2&gt;&lt;p&gt;页面的样式文件建议放在与页面JS的同级目录下，然后通过ES6规范 import 进行引入，支持使用 CSS 预编译处理器，目
+      
+    
+    </summary>
+    
+      <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python玩不动啊</title>
+    <link href="http://yoursite.com/2018/11/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8/%E7%8E%A9%E4%B8%8D%E5%8A%A8_python/"/>
+    <id>http://yoursite.com/2018/11/26/玩不动/玩不动_python/</id>
+    <published>2018-11-26T06:22:08.000Z</published>
+    <updated>2018-11-27T13:32:02.109Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int2 = functools.partial(int, base=2)</div></pre></td></tr></table></figure><p>可以生成一个函数，默认填写了一些参数。</p><h4 id="数组的迭代函数"><a href="#数组的迭代函数" class="headerlink" title="数组的迭代函数"></a>数组的迭代函数</h4><ol><li>map</li><li>reduce</li><li>filter</li><li>sorted</li></ol><p>都是单纯的函数，而不是作为类的一个方法。体现了函数式编程的哲学</p><h4 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h4><ul><li>类和对象的属性是可以在创建完以后在进行赋值。</li><li>限制实例的属性</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line">    __slots__ = (&apos;name&apos;, &apos;age&apos;) # 用tuple定义允许绑定的属性名称</div></pre></td></tr></table></figure><ul><li>使用来property装饰器来实现定义set和get</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">class Student(object):</div><div class="line"></div><div class="line">    @property</div><div class="line">    def score(self):</div><div class="line">        return self._score</div><div class="line"></div><div class="line">    @score.setter</div><div class="line">    def score(self, value):</div><div class="line">        if not isinstance(value, int):</div><div class="line">            raise ValueError(&apos;score must be an integer!&apos;)</div><div class="line">        if value &lt; 0 or value &gt; 100:</div><div class="line">            raise ValueError(&apos;score must between 0 ~ 100!&apos;)</div><div class="line">        self._score = value</div></pre></td></tr></table></figure><ul><li>type可以用来创建动态创建类</li></ul><figure class="highlight plain"><figcaption><span>def fn(self, name='world'): # 先定义函数</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">...     print(&apos;Hello, %s.&apos; % name)</div><div class="line">...</div><div class="line">&gt;&gt;&gt; Hello = type(&apos;Hello&apos;, (object,), dict(hello=fn)) # 创建Hello class</div><div class="line">&gt;&gt;&gt; h = Hello()</div><div class="line">&gt;&gt;&gt; h.hello()</div><div class="line">Hello, world.</div><div class="line">&gt;&gt;&gt; print(type(Hello))</div><div class="line">&lt;class &apos;type&apos;&gt;</div><div class="line">&gt;&gt;&gt; print(type(h))</div><div class="line">&lt;class &apos;__main__.Hello&apos;&gt;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;偏函数&quot;&gt;&lt;a href=&quot;#偏函数&quot; class=&quot;headerlink&quot; title=&quot;偏函数&quot;&gt;&lt;/a&gt;偏函数&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;d
       
     
     </summary>
@@ -85,6 +85,31 @@
     
     
       <category term="react-native" scheme="http://yoursite.com/tags/react-native/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript玩不动啊</title>
+    <link href="http://yoursite.com/2018/10/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8/%E7%8E%A9%E4%B8%8D%E5%8A%A8_javascript/"/>
+    <id>http://yoursite.com/2018/10/26/玩不动/玩不动_javascript/</id>
+    <published>2018-10-26T06:22:08.000Z</published>
+    <updated>2018-11-27T13:32:30.337Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="获取数组中的值"><a href="#获取数组中的值" class="headerlink" title="获取数组中的值"></a>获取数组中的值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var foo = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];</div><div class="line"></div><div class="line">var [one, two, three] = foo;</div><div class="line">console.log(one); // &quot;one&quot;</div><div class="line">console.log(two); // &quot;two&quot;</div><div class="line">console.log(three); // &quot;three&quot;</div><div class="line"></div><div class="line">//如果你要忽略某些值，你可以按照下面的写法获取你想要的值</div><div class="line">var [first, , , last] = foo;</div><div class="line">console.log(first); // &quot;one&quot;</div><div class="line">console.log(last); // &quot;four&quot;</div><div class="line"></div><div class="line">//你也可以这样写</div><div class="line">var a, b; //先声明变量</div><div class="line"></div><div class="line">[a, b] = [1, 2];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 2</div></pre></td></tr></table></figure><p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a, b;</div><div class="line"></div><div class="line">[a=5, b=7] = [1];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 7</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;获取数组中的值&quot;&gt;&lt;a href=&quot;#获取数组中的值&quot; class=&quot;headerlink&quot; title=&quot;获取数组中的值&quot;&gt;&lt;/a&gt;获取数组中的值&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
+      
+    
+    </summary>
+    
+      <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   
@@ -135,31 +160,6 @@
     
     
       <category term="react-native" scheme="http://yoursite.com/tags/react-native/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript玩不动啊</title>
-    <link href="http://yoursite.com/2018/10/26/%E7%8E%A9%E4%B8%8D%E5%8A%A8/%E7%8E%A9%E4%B8%8D%E5%8A%A8_javascript/"/>
-    <id>http://yoursite.com/2018/10/26/玩不动/玩不动_javascript/</id>
-    <published>2018-10-26T06:22:08.000Z</published>
-    <updated>2018-11-27T13:32:30.337Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="获取数组中的值"><a href="#获取数组中的值" class="headerlink" title="获取数组中的值"></a>获取数组中的值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var foo = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];</div><div class="line"></div><div class="line">var [one, two, three] = foo;</div><div class="line">console.log(one); // &quot;one&quot;</div><div class="line">console.log(two); // &quot;two&quot;</div><div class="line">console.log(three); // &quot;three&quot;</div><div class="line"></div><div class="line">//如果你要忽略某些值，你可以按照下面的写法获取你想要的值</div><div class="line">var [first, , , last] = foo;</div><div class="line">console.log(first); // &quot;one&quot;</div><div class="line">console.log(last); // &quot;four&quot;</div><div class="line"></div><div class="line">//你也可以这样写</div><div class="line">var a, b; //先声明变量</div><div class="line"></div><div class="line">[a, b] = [1, 2];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 2</div></pre></td></tr></table></figure><p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var a, b;</div><div class="line"></div><div class="line">[a=5, b=7] = [1];</div><div class="line">console.log(a); // 1</div><div class="line">console.log(b); // 7</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;获取数组中的值&quot;&gt;&lt;a href=&quot;#获取数组中的值&quot; class=&quot;headerlink&quot; title=&quot;获取数组中的值&quot;&gt;&lt;/a&gt;获取数组中的值&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
-      
-    
-    </summary>
-    
-      <category term="玩不动" scheme="http://yoursite.com/categories/%E7%8E%A9%E4%B8%8D%E5%8A%A8/"/>
-    
-    
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
     
   </entry>
   
