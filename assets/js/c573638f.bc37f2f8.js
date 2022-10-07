@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwhc_blog=self.webpackChunkwhc_blog||[]).push([[964],{8866:function(e){e.exports=JSON.parse('[{"label":"docker","permalink":"/tags/docker","count":1},{"label":"python","permalink":"/tags/python","count":1}]')}}]);
